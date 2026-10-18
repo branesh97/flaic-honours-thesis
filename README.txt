@@ -35,13 +35,14 @@ REPOSITORY STRUCTURE AND EXECUTION
 08_tables_figures.R        Raw-error PRIAL tables
 09_mcb_with_base.R         Additional MCB comparisons against ETS base forecasts
 
-data/                      Supply TRA-final.csv after checking redistribution rights
+data/                      TRA-final.csv. Used by Nguyen et al. (2025).
 rds/                       Saved intermediary/final R objects and result tables
 figures/                   Generated plots and visualisations
-coefficients/              FLAIC coefficient matrices (144 per-origin RDS files)
-checkpoints/               Intermediate checkpoints (not automatically resumed)
+coefficients/              FLAIC coefficient matrices (144 per-origin RDS files) (uploaded later)
+checkpoints/               Intermediate checkpoints (not automatically resumed) (uploaded later)
 supplementary/             Supplementary MCB documentation and output CSVs
-report/                    Thesis PDF (existing folder on GitHub)
+thesis/                    Thesis PDF (existing folder on GitHub)
+thesis-qmd/                Thesis QMD files
 
 Requirements: R; packages hts, forecast, glmnet, future, future.apply,
 tidyverse, patchwork and zoo. Exact historical versions may be recovered from
@@ -67,7 +68,7 @@ saved inputs and can be rerun after their prerequisites have been generated.
 COMPUTATION AND REPRODUCIBILITY
 -------------------------------
 The analysis used eight parallel R workers (01_data_setup.R: workers = 8).
-The author reports approximately 36 hours for the FLAIC estimation stage on
+The main expensive run too approximately 36 hours for the FLAIC estimation stage on
 eight workers, not including all other processing stages. Runtime will differ
 by machine, available memory, I/O and package versions. Forecast generation
 saves periodic checkpoints, but 03_run_forecasts.R does NOT automatically
@@ -86,8 +87,7 @@ Key saved outputs:
 
 The data input is not bundled. The raw CSV must contain 264 months and 308
 purpose-of-travel data columns after two leading columns, grouped in sets of
-four columns per region. Confirm the source's redistribution terms and document
-how other users can obtain it. Do not upload sensitive or licensed data.
+four columns per region.
 
 SUPPLEMENTARY MCB COMPARISONS
 -----------------------------
