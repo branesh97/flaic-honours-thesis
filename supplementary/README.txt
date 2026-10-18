@@ -1,0 +1,1 @@
+These supplementary materials describe MCB tests including ETS base forecasts. Run ../09_mcb_with_base.R from the repository root after 05_evaluate.R to generate the numerical CSV files and the corresponding report. The pre-existing summary records the thesis statement and is not a fresh recalculation.

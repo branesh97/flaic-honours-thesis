@@ -1,0 +1,13 @@
+# Local environment
+.DS_Store
+.Rhistory
+.Rproj.user/
+.RData
+*.RData
+*.Rdata
+*.log
+# Intermediate checkpoints are large; output files are generated
+checkpoints/
+# Do not publish any local secrets or credentials
+.env
+*.key

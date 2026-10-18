@@ -1,0 +1,9 @@
+Reproducibility preparation for the original FLAIC thesis R scripts:
+- Removed absolute Mac working directory and changed input to data/TRA-final.csv.
+- Saved and loaded completed forecast/evaluation RDS outputs under rds/.
+- Removed duplicate full-session .RData saves while retaining RDS outputs.
+- Corrected analysis-workbench undefined list names and a PCA factor label mismatch.
+- Standardised plot output paths, and made 08_tables_figures.R standalone.
+- Added 09_mcb_with_base.R as a reproducible supplementary comparison script.
+No estimation or evaluation methodology was intentionally changed.
+The cleaned scripts have not been re-executed in a fresh R environment.

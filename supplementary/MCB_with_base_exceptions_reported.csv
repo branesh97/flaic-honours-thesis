@@ -1,0 +1,3 @@
+horizon,estimator,PCA_specification,method,comment
+6,ridge,"Centred, unscaled",p=77,"Reported in thesis; numerical rank comparison not yet recomputed here"
+6,ridge,"Uncentred, unscaled",p=77,"Reported in thesis; numerical rank comparison not yet recomputed here"

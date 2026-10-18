@@ -1,0 +1,23 @@
+MCB COMPARISONS WITH ETS BASE FORECASTS: RESULTS REPORTED IN THE SUBMITTED THESIS
+
+The submitted thesis reports a separate Friedman/Nemenyi analysis comparing
+ETS base forecasts with matching IComb and FLAIC specifications under 95%
+Nemenyi comparisons. Each panel contains Base, IComb, and eight FLAIC variants.
+
+At forecast horizons 1 and 12, the included FLAIC specifications were reported
+to have significantly better average ranks than the ETS base forecasts.
+
+At horizon 6, two FLAIC-S specifications were reported as NOT significantly
+better than the ETS base forecasts:
+  - Ridge (FLAIC-S), centred-unscaled PCA, p = 77.
+  - Ridge (FLAIC-S), uncentred-unscaled PCA, p = 77.
+
+This is a record of what the thesis reports, not a numerical recomputation in
+this repository release. Run 09_mcb_with_base.R after the complete evaluation
+objects are available to produce unrounded ranks, critical distances, and CSVs
+for every method, preprocessing specification and horizon.
+
+"Not significantly better" does not imply "significantly worse". Hierarchy
+series are related through aggregation, so rank-based statistical comparisons
+need cautious interpretation. The numerical outputs should be checked against
+the statements above before publishing an empirical significance claim.
