@@ -10,4 +10,4 @@ This repository implements regularised IComb augmentation with separately foreca
 
 **Supplementary results:** See [supplementary-mcb/](supplementary-mcb/) and [09_mcb_with_base.R](09_mcb_with_base.R) for the MCB comparisons including ETS base forecasts. Numerical CSVs must be regenerated from the saved evaluation objects; the accompanying text identifies findings reported in the submitted thesis.
 
-**Data:** The TRA source CSV and large intermediate results are not provided in this initial code upload. Please check redistribution rights and file sizes before adding them.
+**Data:** The TRA source CSV is same used by Nguyen et al. (2025), and provided in [data/](data/)
