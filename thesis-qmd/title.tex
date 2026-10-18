@@ -1,0 +1,94 @@
+\usepackage{titlesec}
+\usepackage{setspace}
+
+% --------------------------------------------------
+% MAIN BODY LINE SPACING
+% --------------------------------------------------
+\AtBeginDocument{\setstretch{1.15}}
+
+% --------------------------------------------------
+% SECTION FORMATTING
+% --------------------------------------------------
+
+% Numbered main sections: 1. Introduction
+\titleformat{\section}
+  {\normalfont\bfseries\fontsize{12}{14}\selectfont}
+  {\thesection.}
+  {0.5em}
+  {}
+
+% Unnumbered main sections: Abstract
+\titleformat{name=\section,numberless}
+  {\normalfont\bfseries\centering\fontsize{12}{14}\selectfont}
+  {}
+  {0pt}
+  {}
+
+% Subsections: 2.1, 2.2, ...
+\titleformat{\subsection}
+  {\normalfont\itshape\fontsize{12}{14}\selectfont}
+  {\thesubsection}
+  {0.5em}
+  {}
+
+% Subsubsections: 2.2.1, 2.2.2, ...
+\titleformat{\subsubsection}
+  {\normalfont\itshape\fontsize{11}{13}\selectfont}
+  {\thesubsubsection}
+  {0.5em}
+  {}
+
+% --------------------------------------------------
+% CUSTOM TITLE PAGE
+% --------------------------------------------------
+
+\makeatletter
+\renewcommand{\maketitle}{
+  \bgroup
+  \setlength{\parindent}{0pt}
+
+  \begin{spacing}{1.0}
+
+  \begin{center}
+    {\Large\bfseries \@title\par}
+
+    \vspace{1.0cm}
+
+    A thesis submitted for the unit:\par
+    \vspace{0.2cm}
+    ETC5860: Honours Research Project
+
+    \vspace{0.8cm}
+
+    by
+
+    \vspace{0.5cm}
+
+    Branesh Prakash
+  \end{center}
+
+  \vspace{0.8cm}
+
+  \begin{flushleft}
+    Student ID: 35775246\\
+    Email: bpra0018@student.monash.edu\\
+    Degree: Master of Applied Econometrics
+  \end{flushleft}
+
+  \vspace{0.8cm}
+
+  \begin{center}
+    Supervised by
+
+    \vspace{0.3cm}
+
+    Dr. Shanika L Wickramasuriya\\
+    Prof. George Athanasopoulos
+  \end{center}
+
+  \vspace{0.6cm}
+
+  \end{spacing}
+  \egroup
+}
+\makeatother
