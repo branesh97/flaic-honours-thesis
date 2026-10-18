@@ -1,0 +1,37 @@
+SUPPLEMENTARY MCB COMPARISONS WITH ETS BASE FORECASTS
+====================================================
+
+This short account reproduces the qualitative conclusion reported in the submitted
+thesis (the footnote accompanying the MCB analysis). It is NOT a recomputation
+from model output files. To produce the full numerical evidence and verify
+these statements, run 09_mcb_with_base.R after 05_evaluate.R.
+
+Method:
+- The Friedman test and post-hoc Nemenyi critical-distance comparisons are
+  conducted using each of the 112 hierarchy series as a ranking block.
+- Forecast horizons h = 1, 6, 12 are considered.
+- For each PCA centring/scaling specification, ridge and lasso are analysed
+  separately. Each comparison includes the ETS Base, the matching IComb
+  estimator, and the eight FLAIC augmentation dimensions.
+- Adding Base changes the number of methods in each panel and therefore
+  requires a new Nemenyi critical distance.
+
+Reported findings:
+- At h = 1 and h = 12, both IComb variants and all FLAIC variants have
+  significantly better average ranks than the ETS base forecasts.
+- At h = 6, this also holds except for TWO ridge-regularised FLAIC-S
+  configurations, both using p = 77 principal components:
+    * FLAIC-S; centred, unscaled PCA; p = 77; h = 6.
+    * FLAIC-S; uncentred, unscaled PCA; p = 77; h = 6.
+- These are exceptions to being significantly better than Base; they do not
+  establish that the two FLAIC methods are significantly WORSE than Base.
+
+Statistical caution:
+The 112 series are linked through aggregation, so the ranking blocks are not
+independent. Interpretation of test significance should be cautious.
+
+Numerical verification:
+Run: Rscript 09_mcb_with_base.R
+Outputs: supplementary/MCB_with_base_all_comparisons.csv
+         supplementary/MCB_with_base_exceptions.csv
+         supplementary/MCB_with_base_report.txt
