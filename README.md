@@ -8,6 +8,6 @@ This repository implements regularised IComb augmentation with separately foreca
 
 **Scripts:** Run stages 01, 03–09 in order from the repository root; stage 02 is sourced automatically. Full estimation takes substantial time (the FLAIC stage was approximately 36 hours using eight parallel workers).
 
-**Supplementary results:** See [supplementary/](supplementary/) and [09_mcb_with_base.R](09_mcb_with_base.R) for the MCB comparisons including ETS base forecasts. Numerical CSVs must be regenerated from the saved evaluation objects; the accompanying text identifies findings reported in the submitted thesis.
+**Supplementary results:** See [supplementary-mcb/](supplementary-mcb/) and [09_mcb_with_base.R](09_mcb_with_base.R) for the MCB comparisons including ETS base forecasts. Numerical CSVs must be regenerated from the saved evaluation objects; the accompanying text identifies findings reported in the submitted thesis.
 
 **Data:** The TRA source CSV and large intermediate results are not provided in this initial code upload. Please check redistribution rights and file sizes before adding them.
