@@ -77,9 +77,9 @@ summary tables; the later scripts can reuse its completed RDS outputs.
 
 Key saved outputs:
  rds/flaic_01_data_setup.rds
- rds/flaic_03_forecasts_complete.rds
- rds/flaic_04_flap_complete.rds
- rds/flaic_05_evaluation_complete.rds
+ rds/flaic_03_forecasts_complete.rds      (cannot be uploaded; size constraint)
+ rds/flaic_04_flap_complete.rds           (cannot be uploaded; size constraint)
+ rds/flaic_05_evaluation_complete.rds     (cannot be uploaded; size constraint)
  rds/table_prial_raw_errors.rds
  supplementary/MCB_with_base_all_comparisons.csv
  supplementary/MCB_with_base_exceptions.csv
