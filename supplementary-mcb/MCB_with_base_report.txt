@@ -1,0 +1,23 @@
+FLAIC THESIS: MCB COMPARISONS INCLUDING ETS BASE FORECASTS
+======================================================
+
+Friedman and Nemenyi comparisons; all 112 hierarchy series as ranking blocks.
+Forecast horizons h = 1, 6 and 12; four PCA preprocessing specifications.
+Ridge and lasso are assessed in separate panels.
+Each panel includes Base, corresponding IComb, and eight FLAIC p specifications (10 methods).
+Significantly better than Base means: average_rank(Base) - average_rank(method) > critical distance.
+This is different from 'not significantly worse than the best-ranked method'.
+
+Total FLAIC configurations tested: 192
+FLAIC configurations not significantly better than Base: 2
+
+EXCEPTIONS (unrounded ranks and critical distances)
+ horizon estimator   PCA_specification method      avg_rank base_avg_rank base_minus_method_rank nemenyi_critical_distance                      comparison_vs_base
+       6     ridge   Centred, unscaled   p=77 7.51785714286 8.79464285714          1.27678571429              1.2799846761 Better ranked, not significantly better
+       6     ridge Uncentred, unscaled   p=77 7.52678571429 8.75892857143          1.23214285714              1.2799846761 Better ranked, not significantly better
+
+INTERPRETATION NOTES
+Results are rank-based across hierarchy series, which are dependent through aggregation.
+These comparisons do not establish independent evidence across hierarchy series.
+The p-values and critical distances are recomputed including Base in each panel.
+

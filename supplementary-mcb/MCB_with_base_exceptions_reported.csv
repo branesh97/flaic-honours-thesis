@@ -1,0 +1,3 @@
+source,horizon,regularisation,method,PCA_specification,p,comparison,interpretation
+Submitted thesis MCB footnote,6,ridge,FLAIC-S,"Centred, unscaled",77,Not significantly better than ETS base,Does not imply significantly worse than base
+Submitted thesis MCB footnote,6,ridge,FLAIC-S,"Uncentred, unscaled",77,Not significantly better than ETS base,Does not imply significantly worse than base
